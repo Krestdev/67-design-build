@@ -1,0 +1,54 @@
+{
+  "HomePage": {
+    "title": "Building Better",
+    "maintitle": "Sustainably Modernizing",
+    "subtitle": "67 Design & Build supports public and private project owners across Cameroon: studies, design, construction, and 360° maintenance.",
+    "mainbutton": "Request a Quote",
+    "trustedby": "Trusted by",
+    "about_title": "Every project is a unique adventure",
+    "about_content": "We guide our clients from the first idea to the final realization, transforming their spaces with creativity, expertise, and precision. Driven by our core values – professionalism, innovation, quality, commitment, and proximity – our team designs tailor-made, elegant, and durable solutions.",
+    "services_title": "Our Services",
+    "service_geo_title": "Geotechnical Project Study",
+    "service_geo_desc": "Soil studies and geotechnical analyses to ensure foundation stability and safety.",
+    "service_cal_title": "Structural Calculation",
+    "service_cal_desc": "Our team carries out comprehensive structural studies to guarantee stability, durability, and efficiency, regardless of project size.",
+    "service_cost_title": "Cost Estimation",
+    "service_cost_desc": "Each quotation is based on rigorous analysis and a complete understanding of the project, offering a clear and controlled view of costs.",
+    "service_work_title": "Execution of Major Works",
+    "service_work_desc": "Each stage is carried out with precision to ensure durable, safe, and standards-compliant structures.",
+    "expertise_title": "Our Areas of Expertise",
+    "expertise_desc": "Through an approach combining design and construction, we create elegant, functional, and sustainable spaces fully adapted to our clients’ needs.",
+    "area_services_title": "Commercial and Service Spaces",
+    "area_services_desc": "Shops and retail stores, Shopping centers, Restaurants, cafés and bars, Hotels and hospitality venues, Spas and beauty salons, Leisure and entertainment areas",
+    "area_pro_title": "Professional and Institutional Spaces",
+    "area_pro_desc": "Offices and headquarters, Business centers and coworking spaces, Public institutions and administrations, Schools, universities and training centers",
+    "area_res_title": "Residential and Logistic Spaces",
+    "area_res_desc": "Private villas and residences, Residential buildings and apartments, Warehouses and industrial buildings, Garages and storage areas",
+    "project_title": "Some",
+    "project_title_main": "featured projects",
+    "project_saga_title": "Saga Africa",
+    "project_saga_desc": "Complete interior and exterior renovation, modernized design with an African spirit.",
+    "project_carino_title": "Le Carino",
+    "project_carino_desc": "10-story mixed-use building (ice cream shop, spa, gym, offices, apartments).",
+    "available": "Available",
+    "cta_title": "Let's build",
+    "cta_title_main": "your vision together",
+    "cta_desc": "Our integrated approach combines aesthetics, functionality, and sustainability to create spaces that reflect your identity and fulfill your aspirations.",
+    "contact_us": "Contact Us"
+  },
+  "Footer": {
+    "terms": "Terms & Conditions",
+    "privacy": "Privacy Policy"
+  },
+  "Navbar": {
+    "about": "About",
+    "services": "Services",
+    "projects": "Projects",
+    "contact": "Contact Us"
+  },
+  "LocaleSwitcher":{
+    "label": "Langue",
+    "fr":"Français",
+    "en":"English"
+  }
+}

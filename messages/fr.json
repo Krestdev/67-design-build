@@ -1,0 +1,54 @@
+{
+  "HomePage": {
+    "title": "Construire mieux",
+    "maintitle": "Moderniser durablement",
+    "subtitle": " 67 Design & Build accompagne maîtres d’ouvrage publics et privés à travers tout le Cameroun : études, conception, construction et maintenance 360°.",
+    "mainbutton": "Demander un Devis",
+    "trustedby": "Supporté par",
+    "about_title": "Chaque projet est une aventure unique",
+    "about_content": "Nous guidons nos clients de la première idée jusqu’à la réalisation finale, en transformant leurs espaces avec créativité, expertise et précision. Animée par les valeurs – professionnalisme, innovation, qualité, engagement et proximité – notre équipe conçoit des solutions sur mesure, élégantes et durables.",
+    "services_title": "Nos Services",
+    "service_geo_title": "Étude géotechnique de projet",
+    "service_geo_desc": "Études de sol et analyses géotechniques pour garantir la stabilité et la sécurité des fondations.",
+    "service_cal_title": "Calcul des structures",
+    "service_cal_desc": "Notre équipe réalise des études de structure complètes afin de garantir stabilité, durabilité et efficacité, quelle que soit l’envergure du projet.",
+    "service_cost_title": "Estimation des coûts",
+    "service_cost_desc": "Chaque devis repose sur une analyse rigoureuse et une compréhension complète du projet, offrant une vision claire et maîtrisée des coûts.",
+    "service_work_title": "Exécution des grands travaux",
+    "service_work_desc": "Chaque étape est réalisée avec rigueur pour assurer des structures durables, sûres et conformes aux normes.",
+    "expertise_title": "Nos domaines d’intervention",
+    "expertise_desc": "Grâce à une approche mêlant design et construction, nous concevons des espaces élégants, fonctionnels et durables, entièrement adaptés aux besoins de nos clients.",
+    "area_services_title": "Espaces commerciaux et de services",
+    "area_services_desc": "Boutiques et magasins, Centres commerciaux, Restaurants, cafés et bars, Hôtels et établissements hôteliers, Spas et salons de beauté, Espaces de loisirs et de divertissement",
+    "area_pro_title": "Espaces professionnels et institutionnels",
+    "area_pro_desc": "Bureaux et sièges sociaux, Centres d’affaires et coworking, Établissements publics et administrations, Écoles, universités et centres de formation",
+    "area_res_title": "Espaces résidentiels et logistiques",
+    "area_res_desc": "Villas et résidences privées, Immeubles résidentiels et logements collectifs, Entrepôts et bâtiments industriels, Garages et espaces de stockage",
+    "project_title":"Quelques",
+    "project_title_main":"projets phares",
+    "project_saga_title": "Saga Africa",
+    "project_saga_desc": "Rénovation complète intérieure et extérieure, design modernisé à l’esprit africain.",
+    "project_carino_title":"Le Carino",
+    "project_carino_desc":"Immeuble mixte de 10 niveaux (glacier, spa, gym, bureaux, appartements).",
+    "available": "Disponible",
+    "cta_title": "Construisons",
+    "cta_title_main": "ensemble votre vision",
+    "cta_desc": "Notre approche intégrée allie esthétique, fonctionnalité et durabilité pour créer des espaces qui reflètent votre identité et répondent à vos aspirations.",
+    "contact_us": "Nous Contacter"
+  },
+  "Footer": {
+    "terms": "Termes & Conditions",
+    "privacy": "Politique de confidentialité"
+  },
+  "Navbar": {
+    "about": "À Propos",
+    "services": "Services",
+    "projects": "Projets",
+    "contact": "Nous contacter"
+  },
+  "LocaleSwitcher":{
+    "label": "Langue",
+    "fr":"Français",
+    "en":"English"
+  }
+}
