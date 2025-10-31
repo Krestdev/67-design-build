@@ -117,12 +117,18 @@
     @apply border-border outline-ring/50;
   }
   body {
-    @apply bg-background text-foreground font-sans;
+    @apply bg-background text-foreground font-sans text-[14px] sm:text-[16px] leading-1.5;
+  }
+  h1 {
+    @apply font-bold leading-[1.2] tracking-[-0.02em] text-[clamp(28px,5vw,48px)];
   }
 }
 
 @layer components {
   .contain {
     @apply max-w-[1284px] w-full mx-auto px-5 xl:px-0;
+  }
+  .mono-text {
+    @apply font-mono font-normal tracking-normal;
   }
 }
