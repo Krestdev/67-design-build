@@ -26,7 +26,7 @@ function Navbar() {
         }
     ]
   return (
-    <div className='absolute top-5 left-1/2 -translate-x-1/2 z-20 contain px-5 h-[72px] grid grid-cols-2 gap-5 lg:grid-cols-3 backdrop-blur-sm rounded-[20px] bg-white/30'>
+    <div className='fixed top-5 left-1/2 -translate-x-1/2 z-20 contain w-[calc(100%-40px)] px-5 h-[72px] grid grid-cols-2 gap-5 lg:grid-cols-3 backdrop-blur-sm rounded-[20px] bg-white/30'>
         <div className='hidden lg:flex items-center'>
             {pages.filter(x=>x.title !== "contact").map(({title, href}, id)=>(
                 <Navlink key={id} href={href} title={t(title)}/>
