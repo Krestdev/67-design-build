@@ -2,7 +2,7 @@
 import { motion, Variants } from "framer-motion";
 import { ReactNode } from "react";
 
-type AnimationName = "fadeUp" | "fadeDown" | "fadeIn" | "clipMask" | "slideLeft" | "slideRight";
+type AnimationName = "fadeUp" | "fadeDown" | "fadeIn" | "clipMask" | "slideLeft" | "slideRight" | "popIn" | "rotateFade";
 
 interface AnimatedElementProps {
   children: ReactNode;
@@ -47,10 +47,13 @@ interface AnimatedElementProps {
       },
     },
     clipMask: {
-      initial: { opacity: 0, clipPath: "inset(0 0 100% 0)" },
+      initial: { 
+        opacity: 0, 
+        height: 0, 
+      },
       animate: {
         opacity: 1,
-        clipPath: "inset(0 0 0% 0)",
+        height: "auto", 
         transition: { duration: duration + 0.2, delay, ease: "easeOut" },
       },
     },
@@ -70,6 +73,25 @@ interface AnimatedElementProps {
         transition: { duration, delay, ease: "easeOut" },
       },
     },
+    // NOUVELLE VARIANTE : Pop In (léger zoom)
+    popIn: {
+      initial: { opacity: 0, scale: 0.9 },
+      animate: {
+        opacity: 1,
+        scale: 1,
+        transition: { duration, delay, ease: "easeOut" },
+      },
+    },
+    // NOUVELLE VARIANTE : Rotate Fade (rotation subtile)
+    rotateFade: {
+      initial: { opacity: 0, rotate: -5, y: 20 },
+      animate: {
+        opacity: 1,
+        rotate: 0,
+        y: 0,
+        transition: { duration, delay, ease: "easeOut" },
+      },
+    },
   };
 
   return (
@@ -79,6 +101,7 @@ interface AnimatedElementProps {
       whileInView="animate"
       variants={variantsMap[animation]}
       viewport={{ once, margin: "-100px" }}
+      style={animation === "clipMask" ? { overflow: "hidden" } : {}}
     >
       {children}
     </motion.div>

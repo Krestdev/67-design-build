@@ -1,5 +1,6 @@
 import OnViewAnimation from '@/components/onViewAnimation';
 import Partners from '@/components/sections/partners';
+import Services from '@/components/sections/services';
 import { Button } from '@/components/ui/button';
 import { ChevronRight } from 'lucide-react';
 import { useTranslations } from 'next-intl';
@@ -22,7 +23,7 @@ function Page() {
        <Partners/>
        {/**About brief */}
        <section id="about" className="vert-space flex flex-col items-center justify-center gap-6 sm:gap-10">
-        <OnViewAnimation animation="clipMask" className="w-full sm:w-[calc(100%-40px)] max-w-[1400px] h-auto aspect-21/5">
+        <OnViewAnimation animation="popIn" className="w-full sm:w-[calc(100%-40px)] max-w-[1400px] h-auto aspect-21/5">
           <img src="/images/palace.webp" alt="about us" className='w-full h-full object-cover rounded-none sm:rounded-[20px]' />
         </OnViewAnimation>
         <OnViewAnimation animation="fadeUp" delay={0.25} className="max-w-[960px] flex flex-col gap-5 text-center">
@@ -30,6 +31,8 @@ function Page() {
           <p>{t("about_content")}</p>
         </OnViewAnimation>
        </section>
+       {/**About section End */}
+       <Services/>
     </main>
   )
 }
