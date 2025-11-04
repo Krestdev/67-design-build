@@ -1,6 +1,6 @@
 services:
-  67design:
-    container_name: 67design
+  designandbuild:
+    container_name: designandbuild
     build:
       context: ./
       dockerfile: Dockerfile

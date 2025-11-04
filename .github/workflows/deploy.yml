@@ -71,8 +71,8 @@ jobs:
             export DOCKER_BUILDKIT=0
 
             # Remove any containers that might conflict
-            docker rm -f 67designui 2>/dev/null || true
-            docker rmi current-67designui:latest 2>/dev/null || true
+            docker rm -f designandbuild 2>/dev/null || true
+            docker rmi current-designandbuild:latest 2>/dev/null || true
 
             # Build and run the new image
             docker compose up -d --build
