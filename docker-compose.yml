@@ -13,6 +13,10 @@ services:
       -  caddy-net
 
 networks:
-   caddy-net:
-    driver: bridge
-    attachable: true
+  caddy-net:
+    external: true
+
+# networks:
+#    caddy-net:
+#     driver: bridge
+#     attachable: true
