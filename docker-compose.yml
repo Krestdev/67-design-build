@@ -1,0 +1,22 @@
+services:
+  designandbuild:
+    container_name: designandbuild
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    # env_file:
+    #   - ../.env
+    ports:
+      - "3018:3000"
+    networks:
+      -  caddy-net
+
+networks:
+  caddy-net:
+    external: true
+
+# networks:
+#    caddy-net:
+#     driver: bridge
+#     attachable: true
