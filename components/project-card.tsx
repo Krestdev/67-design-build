@@ -21,7 +21,7 @@ function ProjectCard({RTL=false, title, description, slug, images, style}:Props)
                     <h4 className="text-white">{title}</h4>
                     <p className="text-gray-300">{description}</p>
                 </OnViewAnimation>
-                <Button variant={"ghost"} size={"icon"} className="text-gray-200 hover:text-white">
+                <Button variant={"ghost"} size={"icon"} className="text-gray-200 hover:text-neutral-900">
                     <ArrowUpRight/>
                 </Button>
             </Link>

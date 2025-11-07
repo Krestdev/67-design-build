@@ -1,5 +1,6 @@
 import OnViewAnimation from '@/components/onViewAnimation';
 import ProjectCard from '@/components/project-card';
+import CallToAction from '@/components/sections/call-to-action';
 import Partners from '@/components/sections/partners';
 import Services from '@/components/sections/services';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
@@ -39,7 +40,7 @@ function Page() {
         slug: "le-carino",
         title: t("project_carino_title"),
         description: t("project_carino_desc"),
-        images: [{src:"/images/house.webp", alt:"chantier"},{src:"/images/house_garage.webp", alt:"chantier"},{src:"/images/house_pool.webp", alt:"chantier"},],
+        images: [{src:"/images/carino_3d_2.webp", alt:"3d le carino"},{src:"/images/carino_3d_1.webp", alt:"le carino"},{src:"/images/carino_3d.webp", alt:"3d du carino"},],
       },
     ]; 
   return (
@@ -68,7 +69,7 @@ function Page() {
        {/**About section End */}
        <Services/>
        {/**Services end */}
-       <section id="domains" className="bg-gray-900 text-gray-100">
+       <section id="domains" className="bg-neutral-900 text-gray-100">
         <div className="contain vert-space grid grid-cols-1 gap-4 lg:grid-cols-2">
           <div className="flex flex-col gap-6 sm:gap-10">
             <div className="flex flex-col gap-4">
@@ -98,7 +99,7 @@ function Page() {
         </div>
        </section>
        {/**Expertise end */}
-       <section id="projects" className="bg-gray-900 text-gray-100 vert-space">
+       <section id="projects" className="bg-neutral-900 text-gray-100 vert-space">
         <div className="contain flex flex-col gap-6 sm:gap-10 justify-center">
           <div className="flex flex-col gap-4 items-start sm:items-center">
             <OnViewAnimation animation="fadeUp">
@@ -113,6 +114,8 @@ function Page() {
           ))}
         </div>
        </section>
+       {/**Projects section End */}
+       <CallToAction/>
     </main>
   )
 }
