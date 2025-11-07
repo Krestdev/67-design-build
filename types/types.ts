@@ -4,3 +4,16 @@ export interface navigationLink {
 }
 
 export type LocaleGroup = { lang: string; title: string };
+
+export type Expertise = {
+  id: number;
+  title: string;
+  desc: string;
+}
+
+export type ProjectPreview = {
+  slug: string;
+  title: string;
+  description: string;
+  images: Array<{src:string; alt:string}>
+}

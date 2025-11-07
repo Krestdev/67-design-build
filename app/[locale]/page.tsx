@@ -1,13 +1,47 @@
 import OnViewAnimation from '@/components/onViewAnimation';
+import ProjectCard from '@/components/project-card';
 import Partners from '@/components/sections/partners';
 import Services from '@/components/sections/services';
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import { Button } from '@/components/ui/button';
+import { Expertise, ProjectPreview } from '@/types/types';
 import { ChevronRight } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 import Link from 'next/link';
 
 function Page() {
     const t = useTranslations("HomePage");
+    const expertises:Array<Expertise> = [
+      {
+        id: 1,
+        title: t("area_services_title"),
+        desc: t("area_services_desc")
+      },
+      {
+        id: 3,
+        title: t("area_res_title"),
+        desc: t("area_res_desc")
+      },
+      {
+        id: 2,
+        title: t("area_pro_title"),
+        desc: t("area_pro_desc")
+      },
+    ];
+    const top_projects: Array<ProjectPreview> = [
+      {
+        slug: "saga-africa",
+        title: t("project_saga_title"),
+        description: t("project_saga_desc"),
+        images: [{src:"/images/saga_room.webp", alt:"saga-africa"},{src:"/images/saga_home.webp", alt:"saga interior"},{src:"/images/saga_exterior.webp", alt:"saga external"}],
+      },
+      {
+        slug: "le-carino",
+        title: t("project_carino_title"),
+        description: t("project_carino_desc"),
+        images: [{src:"/images/house.webp", alt:"chantier"},{src:"/images/house_garage.webp", alt:"chantier"},{src:"/images/house_pool.webp", alt:"chantier"},],
+      },
+    ]; 
   return (
     <main>
       <section className='relative overflow-hidden w-full sm:min-h-[90vh] px-5 py-36 flex flex-col gap-3 sm:gap-5 items-center text-center'>
@@ -33,6 +67,52 @@ function Page() {
        </section>
        {/**About section End */}
        <Services/>
+       {/**Services end */}
+       <section id="domains" className="bg-gray-900 text-gray-100">
+        <div className="contain vert-space grid grid-cols-1 gap-4 lg:grid-cols-2">
+          <div className="flex flex-col gap-6 sm:gap-10">
+            <div className="flex flex-col gap-4">
+              <OnViewAnimation animation="fadeUp">
+                <h2 className="text-white">{t("expertise_title")}</h2>
+              </OnViewAnimation>
+              <OnViewAnimation animation="fadeUp" delay={0.25}>
+                <p>{t("expertise_desc")}</p>
+              </OnViewAnimation>
+            </div>
+            <div>
+              <OnViewAnimation animation="popIn">
+                <Accordion type="single" collapsible>
+                  {expertises.map(({id, title, desc})=>(
+                    <AccordionItem key={id} value={String(id)}>
+                      <AccordionTrigger className="cursor-pointer hover:no-underline text-[16px] sm:text-[20px] font-semibold text-white">{title}</AccordionTrigger>
+                      <AccordionContent className="text-[14px] leading-[150%] sm:text-[16px] text-gray-100">{desc}</AccordionContent>
+                    </AccordionItem>
+                  ))}
+                </Accordion>
+              </OnViewAnimation>
+            </div>
+          </div>
+          <OnViewAnimation animation="slideRight" delay={0.4}>
+            <img src="/images/interior.webp" alt="image" className="w-full h-auto aspect-video rounded-[20px]" />
+          </OnViewAnimation>
+        </div>
+       </section>
+       {/**Expertise end */}
+       <section id="projects" className="bg-gray-900 text-gray-100 vert-space">
+        <div className="contain flex flex-col gap-6 sm:gap-10 justify-center">
+          <div className="flex flex-col gap-4 items-start sm:items-center">
+            <OnViewAnimation animation="fadeUp">
+              <h2 className="text-start sm:text-center text-white text-[clamp(24px,4.5vw,60px)]"><span className="mono-text">{t("project_title")}</span><br/>{t("project_title_main")}</h2>
+            </OnViewAnimation>
+            <OnViewAnimation animation="fadeUp" delay={0.25}>
+              <p className="text-start sm:text-center max-w-[744px]">{t("project_desc")}</p>
+            </OnViewAnimation>
+          </div>
+          {top_projects.map((project, id)=>(
+            <ProjectCard key={id} RTL={id%2!==0} style="default" {...project}/>
+          ))}
+        </div>
+       </section>
     </main>
   )
 }

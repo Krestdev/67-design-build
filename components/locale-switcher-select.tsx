@@ -35,12 +35,12 @@ export default function LocaleSwitcherSelect({
 
   return (
     <DropdownMenu>
-        <DropdownMenuTrigger className="flex items-center gap-2 h-9 px-5">
+        <DropdownMenuTrigger className="flex items-center gap-2 h-9 px-5 cursor-pointer">
             <TranslateIcon size={24}/>{defaultValue}
         </DropdownMenuTrigger>
         <DropdownMenuContent>
             {locales.map(({lang, title})=>(
-                <DropdownMenuItem key={lang} onClick={()=>changeLanguage(lang)} disabled={isPending}>
+                <DropdownMenuItem key={lang} onClick={()=>changeLanguage(lang)} disabled={isPending} className="cursor-pointer">
                     {title}
                 </DropdownMenuItem>
             ))}
