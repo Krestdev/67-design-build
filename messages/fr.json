@@ -16,6 +16,10 @@
     "service_cost_desc": "Chaque devis repose sur une analyse rigoureuse et une compréhension complète du projet, offrant une vision claire et maîtrisée des coûts.",
     "service_work_title": "Exécution des grands travaux",
     "service_work_desc": "Chaque étape est réalisée avec rigueur pour assurer des structures durables, sûres et conformes aux normes.",
+    "service_study_title": "Études architecturales et design d’intérieur",
+    "service_study_desc": "Chaque projet bénéficie d’une approche intégrée, combinant esthétique, fonctionnalité et durabilité pour créer des espaces harmonieux et agréables à vivre ou à utiliser.",
+    "service_maintenance_title": "Maintenance 360 de bâtiments et routes",
+    "service_maintenance_desc": "L’entretien et la maintenance garantissent la durabilité, la sécurité et le bon fonctionnement des infrastructures.",
     "expertise_title": "Nos domaines d’intervention",
     "expertise_desc": "Grâce à une approche mêlant design et construction, nous concevons des espaces élégants, fonctionnels et durables, entièrement adaptés aux besoins de nos clients.",
     "area_services_title": "Espaces commerciaux et de services",
@@ -71,5 +75,29 @@
   "maintain_description": "Nous assurons la pérennité de vos ouvrages grâce à une maintenance 360° préventive et curative.",
   "our_team": "Notre équipe",
   "team_description": "Équipe d’experts : une équipe multiculturelle réunissant des professionnels italiens et camerounais, combinant expertise internationale et maîtrise du contexte local."
+},
+"Services":{
+  "services_title": "Des solutions intégrées",
+  "services_subtitle": "de l'étude à la maintenance",
+  "services_intro": "Chez 67 Design & Build, nous réunissons ingénierie, architecture et exécution pour offrir des solutions complètes et durables. Chaque service repose sur la même exigence : qualité, précision et maîtrise des délais."
+},
+"Projects":{
+  "header_title": "Des projets qui allient design",
+  "header_main": "performance et durabilité"
+},
+  "Contact":{
+  "contact_title": "Parlez-nous",
+  "contact_subtitle": "de votre projet",
+  "contact_intro": "Chaque projet commence par une rencontre. Que vous ayez besoin d’une étude technique, d’une conception architecturale, d’une construction complète ou d’un contrat de maintenance, notre équipe est à votre écoute. Nous répondons à chaque demande avec rigueur, réactivité et professionnalisme.",
+  "contact_phone": "Numéro de téléphone",
+  "contact_email": "Email",
+  "contact_address": "Adresse",
+  "contact_follow": "Nous suivre",
+  "contact_form_title": "Contact",
+  "contact_name": "Nom",
+  "contact_mail": "Adresse mail",
+  "contact_subject": "Sujet",
+  "contact_message": "Message",
+  "contact_send": "Envoyer"
 }
 }

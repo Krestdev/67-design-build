@@ -16,6 +16,10 @@
     "service_cost_desc": "Each quotation is based on rigorous analysis and a complete understanding of the project, offering a clear and controlled view of costs.",
     "service_work_title": "Execution of Major Works",
     "service_work_desc": "Each stage is carried out with precision to ensure durable, safe, and standards-compliant structures.",
+    "service_study_title": "Architectural and Interior Design Studies",
+    "service_study_desc": "Each project benefits from an integrated approach combining aesthetics, functionality, and sustainability to create harmonious and comfortable spaces to live or work in.",
+    "service_maintenance_title": "360° Maintenance for Buildings and Roads",
+    "service_maintenance_desc": "Maintenance ensures the durability, safety, and optimal performance of infrastructures.",
     "expertise_title": "Our Areas of Expertise",
     "expertise_desc": "Through an approach combining design and construction, we create elegant, functional, and sustainable spaces fully adapted to our clients’ needs.",
     "area_services_title": "Commercial and Service Spaces",
@@ -71,6 +75,29 @@
   "maintain_description": "We ensure the durability of your assets through preventive and corrective 360° maintenance.",
   "our_team": "Our Team",
   "team_description": "Expert Team: a multicultural group of Italian and Cameroonian professionals combining international expertise with local knowledge."
+},
+  "Services":{
+  "services_title": "Integrated Solutions",
+  "services_subtitle": "from study to maintenance",
+  "services_intro": "At 67 Design & Build, we bring together engineering, architecture, and execution to deliver complete and sustainable solutions. Every service is guided by the same principles: quality, precision, and on-time delivery."
+},
+  "Projects":{
+  "header_title": "Des projets qui allient design",
+  "header_main": "performance, and sustainability"
+},
+  "Contact":{
+  "contact_title": "Tell us",
+  "contact_subtitle": "about your project",
+  "contact_intro": "Every project begins with a meeting. Whether you need a technical study, architectural design, full construction, or a maintenance contract, our team is here to listen. We respond to every request with rigor, responsiveness, and professionalism.",
+  "contact_phone": "Phone Number",
+  "contact_email": "Email",
+  "contact_address": "Address",
+  "contact_follow": "Follow Us",
+  "contact_form_title": "Contact",
+  "contact_name": "Name",
+  "contact_mail": "Email Address",
+  "contact_subject": "Subject",
+  "contact_message": "Message",
+  "contact_send": "Send"
 }
-
 }

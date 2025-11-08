@@ -16,10 +16,18 @@ export type ProjectPreview = {
   title: string;
   description: string;
   images: Array<{src:string; alt:string}>
+  year: string;
 }
 
 export type HeroProps = {
   title: string;
   main_title: string;
   image: string;
+}
+
+export interface serviceProps {
+    title: string;
+    description: string;
+    src: string;
+    id:string;
 }

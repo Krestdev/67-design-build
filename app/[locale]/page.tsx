@@ -35,12 +35,14 @@ function Page() {
         title: t("project_saga_title"),
         description: t("project_saga_desc"),
         images: [{src:"/images/saga_room.webp", alt:"saga-africa"},{src:"/images/saga_home.webp", alt:"saga interior"},{src:"/images/saga_exterior.webp", alt:"saga external"}],
+        year: "2025"
       },
       {
         slug: "le-carino",
         title: t("project_carino_title"),
         description: t("project_carino_desc"),
         images: [{src:"/images/carino_3d_2.webp", alt:"3d le carino"},{src:"/images/carino_3d_1.webp", alt:"le carino"},{src:"/images/carino_3d.webp", alt:"3d du carino"},],
+        year: "2025"
       },
     ]; 
   return (
