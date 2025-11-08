@@ -51,5 +51,26 @@
     "label": "Langue",
     "fr":"Français",
     "en":"English"
-  }
+  },
+  "About":{
+  "about": "About",
+  "company_name": "67 Design and Build",
+  "company_description": "67 Design & Build is a Cameroonian civil engineering and integrated construction company, recognized for its technical rigor and architectural vision.",
+  "projects_completed": "Projects Completed",
+  "years_experience": "Years of Experience",
+  "clients_satisfied": "Satisfied Clients",
+  "our_approach": "Our Approach",
+  "approach_description": "We support our clients from design to maintenance through an integrated 'Design & Build' approach.",
+  "study": "Study",
+  "study_description": "We analyze each project in detail to define a clear, reliable, and cost-controlled vision.",
+  "plan": "Plan",
+  "plan_description": "We coordinate resources, schedules, and logistics for smooth, efficient execution.",
+  "build": "Build",
+  "build_description": "Our teams deliver with precision, quality, and full compliance with standards and deadlines.",
+  "maintain": "Maintain",
+  "maintain_description": "We ensure the durability of your assets through preventive and corrective 360° maintenance.",
+  "our_team": "Our Team",
+  "team_description": "Expert Team: a multicultural group of Italian and Cameroonian professionals combining international expertise with local knowledge."
+}
+
 }

@@ -51,5 +51,25 @@
     "label": "Langue",
     "fr":"Français",
     "en":"English"
-  }
+  },
+  "About":{
+  "about": "À propos de",
+  "company_name": "67 Design and Build",
+  "company_description": "67 Design & Build est un acteur camerounais du génie civil et de la construction intégrée, reconnu pour sa rigueur technique et sa vision architecturale.",
+  "projects_completed": "Projets réalisés",
+  "years_experience": "Années d'expérience",
+  "clients_satisfied": "Clients satisfaits",
+  "our_approach": "Notre approche",
+  "approach_description": "Nous accompagnons nos clients de la conception à la maintenance, avec une approche intégrée “Design & Build”.",
+  "study": "Étudier",
+  "study_description": "Nous analysons chaque projet en détail pour établir une vision claire, fiable et budgétairement maîtrisée.",
+  "plan": "Planifier",
+  "plan_description": "Nous organisons les ressources, les délais et la logistique pour une exécution fluide et sans imprévus.",
+  "build": "Construire",
+  "build_description": "Nos équipes réalisent les travaux avec précision, qualité et respect absolu des normes et des délais.",
+  "maintain": "Maintenir",
+  "maintain_description": "Nous assurons la pérennité de vos ouvrages grâce à une maintenance 360° préventive et curative.",
+  "our_team": "Notre équipe",
+  "team_description": "Équipe d’experts : une équipe multiculturelle réunissant des professionnels italiens et camerounais, combinant expertise internationale et maîtrise du contexte local."
+}
 }
