@@ -31,3 +31,11 @@ export interface serviceProps {
     src: string;
     id:string;
 }
+
+export interface mailProps {
+  email:string;
+  name:string;
+  subject:string;
+  message:string;
+  phone:string;
+}

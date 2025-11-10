@@ -46,6 +46,7 @@
     "privacy": "Privacy Policy"
   },
   "Navbar": {
+    "home": "Home",
     "about": "About",
     "services": "Services",
     "projects": "Projects",
@@ -54,7 +55,8 @@
   "LocaleSwitcher":{
     "label": "Langue",
     "fr":"Français",
-    "en":"English"
+    "en":"English",
+    "switch": "Changer la langue"
   },
   "About":{
   "about": "About",

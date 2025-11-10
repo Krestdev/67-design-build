@@ -7,14 +7,16 @@ import { Locale } from 'next-intl';
 import { useParams } from 'next/navigation';
 import { useTransition } from 'react';
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from './ui/dropdown-menu';
+import { cn } from "@/lib/utils";
 
 type Props = {
   defaultValue: string;
   locales: LocaleGroup[];
+  className?: string;
 };
 
 export default function LocaleSwitcherSelect({
-  defaultValue,locales
+  defaultValue,locales, className=""
 }: Props) {
   const router = useRouter();
   const [isPending, startTransition] = useTransition();
@@ -35,7 +37,7 @@ export default function LocaleSwitcherSelect({
 
   return (
     <DropdownMenu>
-        <DropdownMenuTrigger className="flex items-center gap-2 h-9 px-5 cursor-pointer">
+        <DropdownMenuTrigger className={cn("flex items-center gap-2 h-9 px-5 cursor-pointer", className)}>
             <TranslateIcon size={24}/>{defaultValue}
         </DropdownMenuTrigger>
         <DropdownMenuContent>

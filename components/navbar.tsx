@@ -4,6 +4,10 @@ import Link from 'next/link'
 import LocaleSwitcher from './localeswitcher'
 import Navlink from './navlink'
 import { Button } from './ui/button'
+import { Sheet, SheetContent, SheetDescription, SheetHeader, SheetTitle, SheetTrigger } from './ui/sheet'
+import { Menu } from 'lucide-react'
+import MenuNavLink from './menu-navlink'
+import LanguageSwitch from './languageSwitch'
 
 function Navbar() {
     const t = useTranslations("Navbar");
@@ -36,6 +40,32 @@ function Navbar() {
         <div className='hidden lg:flex items-center justify-end gap-2'>
             <LocaleSwitcher/>
             <Link href={"/contact"}><Button>{t("contact")}</Button></Link>
+        </div>
+        <div className="inline-block lg:hidden justify-self-end self-center">
+            <Sheet>
+                <SheetTrigger asChild>
+                    <Button size={"icon"} variant={"ghost"}>
+                        <Menu/>
+                    </Button>
+                </SheetTrigger>
+                <SheetContent>
+                    <SheetHeader>
+                        <SheetTitle>
+                            {"67 Design & Build"}
+                        </SheetTitle>
+                        <SheetDescription/>
+                        <div className="mt-5 flex flex-col divide-y">
+                            <MenuNavLink href="/" title={t("home")}/>
+                            {
+                                pages.map((page,id)=>(
+                                    <MenuNavLink key={id} href={page.href} title={t(page.title)}/>
+                                ))
+                            }
+                            <LanguageSwitch/>
+                        </div>
+                    </SheetHeader>
+                </SheetContent>
+            </Sheet>
         </div>
     </div>
   )

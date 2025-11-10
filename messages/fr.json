@@ -46,6 +46,7 @@
     "privacy": "Politique de confidentialité"
   },
   "Navbar": {
+    "home": "Accueil",
     "about": "À Propos",
     "services": "Services",
     "projects": "Projets",
@@ -54,7 +55,8 @@
   "LocaleSwitcher":{
     "label": "Langue",
     "fr":"Français",
-    "en":"English"
+    "en":"English",
+    "switch": "Change language"
   },
   "About":{
   "about": "À propos de",

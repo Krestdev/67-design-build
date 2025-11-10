@@ -1,4 +1,5 @@
 import OnViewAnimation from '@/components/onViewAnimation';
+import ContactForm from '@/components/sections/contactForm';
 import { ExternalLink } from 'lucide-react';
 import { useTranslations } from 'next-intl'
 import React from 'react'
@@ -46,6 +47,7 @@ function Page() {
             </OnViewAnimation>
           </div>
         </div>
+        <ContactForm/>
       </div>
     </main>
   )
