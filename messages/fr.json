@@ -4,7 +4,7 @@
     "maintitle": "Moderniser durablement",
     "subtitle": " 67 Design & Build accompagne maîtres d’ouvrage publics et privés à travers tout le Cameroun : études, conception, construction et maintenance 360°.",
     "mainbutton": "Demander un Devis",
-    "trustedby": "Supporté par",
+    "trustedby": "Ils ont misé sur notre savoir-faire",
     "about_title": "Chaque projet est une aventure unique",
     "about_content": "Nous guidons nos clients de la première idée jusqu’à la réalisation finale, en transformant leurs espaces avec créativité, expertise et précision. Animée par les valeurs – professionnalisme, innovation, qualité, engagement et proximité – notre équipe conçoit des solutions sur mesure, élégantes et durables.",
     "services_title": "Nos Services",
@@ -99,5 +99,21 @@
   "contact_subject": "Sujet",
   "contact_message": "Message",
   "contact_send": "Envoyer"
-}
+},
+  "SEO":{
+    "home_title": "67 Design & Build – Conception, Construction & Maintenance 360°",
+    "home_description": "Entreprise de génie civil et design architectural au Cameroun. Études, construction et maintenance 360° de bâtiments et infrastructures durables.",
+    "services_title": "Nos Services",
+    "services_description": "Découvrez nos services : études, conception, construction, design intérieur, VRD et maintenance 360° pour des ouvrages performants et durables.",
+    "about_title": "À propos",
+    "about_description": "67 Design & Build, acteur du génie civil et de la construction intégrée. Une équipe multiculturelle alliant expertise locale et internationale.",
+    "projects_title": "Projets",
+    "projects_description": "Découvrez nos projets phares : Saga Africa, Le Carino et Dompta. Des réalisations qui allient rigueur technique, design et durabilité.",
+    "contact_title": "Contact",
+    "contact_description": "Parlez-nous de votre projet. Études, construction ou maintenance : notre équipe vous répond sous 72 h avec une proposition sur mesure.",
+    "terms_title": "",
+    "terms_description": "",
+    "privacy_title": "",
+    "privacy_description": ""
+  }
 }

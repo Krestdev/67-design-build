@@ -4,7 +4,7 @@
     "maintitle": "Sustainably Modernizing",
     "subtitle": "67 Design & Build supports public and private project owners across Cameroon: studies, design, construction, and 360° maintenance.",
     "mainbutton": "Request a Quote",
-    "trustedby": "Trusted by",
+    "trustedby": "They relied on our expertise",
     "about_title": "Every project is a unique adventure",
     "about_content": "We guide our clients from the first idea to the final realization, transforming their spaces with creativity, expertise, and precision. Driven by our core values – professionalism, innovation, quality, commitment, and proximity – our team designs tailor-made, elegant, and durable solutions.",
     "services_title": "Our Services",
@@ -99,5 +99,21 @@
   "contact_subject": "Subject",
   "contact_message": "Message",
   "contact_send": "Send"
-}
+},
+  "SEO":{
+    "home_title": "67 Design & Build – Design, Construction & 360° Maintenance",
+    "home_description": "Civil engineering and architectural design company in Cameroon. Studies, construction and 360° maintenance for lasting infrastructures.",
+    "services_title": "Our Services",
+    "services_description": "Explore our services: design studies, construction, interior design, roads & utilities, and 360° maintenance for lasting performance.",
+    "about_title": "About Us",
+    "about_description": "67 Design & Build, a leading civil engineering and construction firm. A multicultural team blending international expertise and local mastery.",
+    "projects_title": "Case Studies",
+    "projects_description": "Explore our featured projects: Saga Africa and Le Carino. Each showcases technical rigor, design excellence, and sustainability.",
+    "contact_title": "Contact",
+    "contact_description": "Tell us about your project. Whether design, construction, or maintenance — our team responds within 72 hours with a tailored proposal.",
+    "terms_title": "",
+    "terms_description": "",
+    "privacy_title": "",
+    "privacy_description": ""
+  }
 }

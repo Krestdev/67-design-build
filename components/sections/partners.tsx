@@ -20,7 +20,11 @@ function Partners() {
         {
             src: "krest.svg",
             alt: "Logo krest holding",
-        }
+        },
+        {
+            src: "carino.svg",
+            alt: "Logo le Carino Pizzeria",
+        },
     ];
   return (
     <div className="mx-auto max-w-[960px] relative overflow-hidden w-full flex flex-col gap-4 text-center py-7">
