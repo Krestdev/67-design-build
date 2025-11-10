@@ -39,28 +39,32 @@ function Page() {
       description: t("maintain_description")
     },
   ];
-  const team_members:Array<{name:string; role:string;image:string}> = [
+  const company_images:Array<{src:string;alt:string}> = [
     {
-        name: "John Doe",
-        role: "General Manager",
-        image: "/images/photo.webp"
+      src:"/images/chantier_0.webp",
+      alt: "chantier"
     },
     {
-        name: "John Doe",
-        role: "General Manager",
-        image: "/images/photo.webp"
+      src:"/images/chantier_1.webp",
+      alt: "chantier"
     },
     {
-        name: "John Doe",
-        role: "General Manager",
-        image: "/images/photo.webp"
+      src:"/images/chantier_2.webp",
+      alt: "chantier"
     },
     {
-        name: "John Doe",
-        role: "General Manager",
-        image: "/images/photo.webp"
+      src:"/images/chantier_3.webp",
+      alt: "chantier"
     },
-]
+    {
+      src:"/images/chantier_4.webp",
+      alt: "chantier"
+    },
+    {
+      src:"/images/chantier_5.webp",
+      alt: "chantier"
+    },
+  ]
   return (
     <div>
       <Hero title={t("about")} main_title={t("company_name")} image={"/images/palace.webp"} />
@@ -68,7 +72,7 @@ function Page() {
       <section className="contain vert-space flex flex-col gap-6 sm:gap-10 items-center">
         <p className="text-[clamp(18px,2vw,28px)] leading-[150%] font-medium text-center max-w-[960px]">{t("company_description")}</p>
         <OnViewAnimation animation="popIn" duration={0.75} delay={0.25}>
-          <img src="/images/about_67.png" alt="about 67 design" className='max-w-[960px] w-full h-auto' />
+          <img src="/images/about_67.webp" alt="about 67 design" className='max-w-[960px] w-full h-auto' />
         </OnViewAnimation>
         <div className="w-full max-w-[960px] flex flex-col sm:flex-row flex-wrap gap-4 sm:gap-6 sm:justify-between items-center">
           {
@@ -98,26 +102,46 @@ function Page() {
       {/**End Values */}
       <section className="bg-neutral-900 text-gray-300">
         <div className="contain vert-space flex flex-col gap-6 sm:gap-10 items-center">
-          <div className="w-full max-w-[636px] flex flex-col gap-4 text-center">
-            <OnViewAnimation animation="fadeUp" duration={0.75} delay={0.15}>
-              <h2 className="text-white">{t("our_team")}</h2>
-            </OnViewAnimation>
-            <OnViewAnimation animation="fadeUp" delay={0.4} duration={0.75}>
-              <p>{t("team_description")}</p>
-            </OnViewAnimation>
-          </div>
-          <div className="flex flex-wrap gap-3 items-start justify-center">
-            {team_members.map((element, id)=>(
-              <OnViewAnimation animation="popIn" duration={0.75} delay={0.2*id} key={id} className="w-full max-w-[204px] flex flex-col">
-                <img src={element.image} alt={element.name} className='rounded-t-[20px] w-full h-auto aspect-square object-cover' />
-                <div className="px-2 py-3">
-                  <span className="text-white font-semibold text-[clamp(16px,1.5vw,18px)] leading-[120%] -tracking-[2%]">{element.name}</span>
-                  <p className="text-neutral-300">{element.role}</p>
-                </div>
-              </OnViewAnimation>
-            ))}
-          </div>
-        </div>
+    {/* Titre + intro (tu peux adapter les clés i18n) */}
+    <div className="w-full max-w-[720px] flex flex-col gap-4 text-center">
+      <OnViewAnimation animation="fadeUp" duration={0.75} delay={0.15}>
+        <h2 className="text-white">{t("gallery_title")}</h2>
+      </OnViewAnimation>
+      <OnViewAnimation animation="fadeUp" delay={0.4} duration={0.75}>
+        <p>{t("gallery_description", { defaultValue: "Aperçu de nos chantiers, bureaux et maquettes." })}</p>
+      </OnViewAnimation>
+    </div>
+
+    {/* Grille d'images */}
+    <ul
+      className="grid w-full gap-3 sm:gap-5 grid-cols-2 sm:grid-cols-3 lg:grid-cols-4"
+    >
+      {company_images.slice(0,4).map((img, idx) => (
+        <OnViewAnimation
+          key={idx}
+          animation="popIn"
+          duration={0.75}
+          delay={0.08 * idx}
+        >
+          <li>
+            <div className="group relative overflow-hidden rounded-2xl bg-neutral-800/40 ring-1 ring-white/5">
+              {/* Variante Next/Image (recommandé) */}
+              {/* <Image src={img.src} alt={img.alt} width={800} height={1000} className="w-full h-auto object-cover" /> */}
+              <img
+                src={img.src}
+                alt={img.alt ?? ""}
+                loading="lazy"
+                className={`w-full h-auto object-cover object-center transition-transform duration-300 group-hover:scale-[1.03] aspect-2/3`}
+              />
+
+              {/* Lueur subtile au survol */}
+              <div className="pointer-events-none absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-gradient-to-t from-black/30 via-transparent to-transparent" />
+            </div>
+          </li>
+        </OnViewAnimation>
+      ))}
+    </ul>
+  </div>
       </section>
       {/**End team */}
       <CallToAction/>
