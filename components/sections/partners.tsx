@@ -27,7 +27,7 @@ function Partners() {
         },
     ];
   return (
-    <div className="mx-auto max-w-[960px] relative overflow-hidden w-full flex flex-col gap-4 text-center py-7">
+    <div className="contain relative overflow-hidden flex flex-col gap-4 text-center py-7">
         <span className='text-[18px] leading-[150%] font-semibold'>{t("trustedby")}</span>
         <Marquee>
             {data.map(({src, alt})=>(

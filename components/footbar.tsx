@@ -16,9 +16,9 @@ function Footbar() {
                 </div>
             </div>
             <div className="flex gap-2">
-                <Link href={"https://www.linkedin.com/company/67-design-build/"} target="_blank"><Button size={"icon"} variant={"ghost"} className="hover:bg-white/20"><img src="/icons/linkedin.svg" alt="IN" className='size-5 object-cover' /></Button></Link>
-                <Link href={"https://www.facebook.com/share/1ZkWjPULF4/?mibextid=wwXIfr"} target="_blank"><Button size={"icon"} variant={"ghost"} className="hover:bg-white/20"><img src="/icons/facebook.svg" alt="FB" className='size-5 object-cover' /></Button></Link>
-                <Link href={"https://www.tiktok.com/@67_design_and_build?_r=1&_t=ZM-91HfEI5Cnq0"} target="_blank"><Button size={"icon"} variant={"ghost"} className="hover:bg-white/20"><img src="/icons/tiktok.svg" alt="TT" className='size-5 object-cover' /></Button></Link>
+                <Link href={ process.env.NEXT_PUBLIC_LINKEDIN ?? "https://www.linkedin.com/company/67-design-build/"} target="_blank"><Button size={"icon"} variant={"ghost"} className="hover:bg-white/20"><img src="/icons/linkedin.svg" alt="IN" className='size-5 object-cover' /></Button></Link>
+                <Link href={ process.env.NEXT_PUBLIC_FACEBOOK ?? "https://www.facebook.com/share/1ZkWjPULF4/?mibextid=wwXIfr"} target="_blank"><Button size={"icon"} variant={"ghost"} className="hover:bg-white/20"><img src="/icons/facebook.svg" alt="FB" className='size-5 object-cover' /></Button></Link>
+                <Link href={ process.env.NEXT_PUBLIC_TIKTOK ?? "https://www.tiktok.com/@67_design_and_build?_r=1&_t=ZM-91HfEI5Cnq0"} target="_blank"><Button size={"icon"} variant={"ghost"} className="hover:bg-white/20"><img src="/icons/tiktok.svg" alt="TT" className='size-5 object-cover' /></Button></Link>
             </div>
         </div>
     </footer>

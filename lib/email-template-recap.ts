@@ -1,6 +1,6 @@
 import { mailProps } from "@/types/types";
 
-export function emailTemplateRecap({name, email, phone, message, subject}:mailProps) {
+export function emailTemplateRecap({name, email, message, subject}:mailProps) {
     return `
     <!DOCTYPE html>
 <html>

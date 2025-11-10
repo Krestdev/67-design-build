@@ -11,8 +11,8 @@ function Page() {
     phone: "+237 677 245 032",
     call: "+237677245032",
     address: "En face Tradex Bonamoussadi, Douala",
-    linkedIn: "#",
-    facebook: "#"
+    linkedIn: process.env.NEXT_PUBLIC_LINKEDIN ?? "https://www.linkedin.com/company/67-design-build/",
+    facebook: process.env.NEXT_PUBLIC_FACEBOOK ?? "https://www.facebook.com/share/1ZkWjPULF4/?mibextid=wwXIfr"
   }
   return (
     <main className="min-h-dvh py-[clamp(144px,10vw,160px)]">

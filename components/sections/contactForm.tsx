@@ -58,9 +58,15 @@ function ContactForm() {
       toast.success(t("success"));
       form.reset();
 
-    } catch (error: any) {
-      toast.error(error.message || t("error"));
-      console.error("Erreur:", error);
+    } catch (error: unknown) {
+        if(error instanceof Error){
+            toast.error(error.message || t("error"));
+            console.error("Erreur:", error);
+        }
+        else {
+            toast.error("Unknown error");
+            console.error("Unknown error")
+        }
     }
     }
   return (

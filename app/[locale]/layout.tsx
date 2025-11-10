@@ -1,12 +1,12 @@
-import type { Metadata } from "next";
-import { Exo, Geist, Geist_Mono, Instrument_Serif } from "next/font/google";
-import "../globals.css";
-import { hasLocale, NextIntlClientProvider } from "next-intl";
-import { notFound } from "next/navigation";
-import { routing } from "@/i18n/routing";
-import Navbar from "@/components/navbar";
 import Footbar from "@/components/footbar";
+import Navbar from "@/components/navbar";
+import { routing } from "@/i18n/routing";
+import type { Metadata } from "next";
+import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { getTranslations } from "next-intl/server";
+import { Exo, Instrument_Serif } from "next/font/google";
+import { notFound } from "next/navigation";
+import "../globals.css";
 
 const exo_sans = Exo({
   variable: "--font-exo",

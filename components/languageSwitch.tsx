@@ -25,7 +25,7 @@ function LanguageSwitch() {
         });
       }
   return (
-    <div className="px-5 h-14 flex items-center gap-2 text-base font-medium" onClick={()=>changeLanguage()}>{t(locale === "fr" ? "en" : "fr")}<span className="text-xs font-normal text-neutral-700 px-2 py-1 rounded border">{t("switch")}</span></div>
+    <button className="px-5 h-14 flex items-center gap-2 text-base font-medium disabled:text-muted disabled:bg-muted" onClick={()=>changeLanguage()} disabled={isPending}>{t(locale === "fr" ? "en" : "fr")}<span className="text-xs font-normal text-neutral-700 px-2 py-1 rounded border">{t("switch")}</span></button>
   )
 }
 
