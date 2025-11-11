@@ -115,7 +115,9 @@
   "contact_mail": "Email Address",
   "contact_subject": "Subject",
   "contact_message": "Message",
-  "contact_send": "Send"
+  "contact_send": "Send",
+  "success": "Your message was sent successfully !",
+  "error": "An error occurred while sending your message. Please try again."
 },
   "SEO":{
     "home_title": "67 Design & Build – Design, Construction & 360° Maintenance",

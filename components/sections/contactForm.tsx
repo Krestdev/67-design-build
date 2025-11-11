@@ -1,5 +1,5 @@
 'use client'
-import React from 'react'
+import React, { useState } from 'react'
 import { useForm } from 'react-hook-form';
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod"
@@ -10,6 +10,8 @@ import { Textarea } from '../ui/textarea';
 import { Button } from '../ui/button';
 import OnViewAnimation from '../onViewAnimation';
 import { toast } from 'sonner';
+import { Loader } from 'lucide-react';
+import { cn } from '@/lib/utils';
 
 const formSchema = z.object({
     name: z.string(),
@@ -20,6 +22,7 @@ const formSchema = z.object({
 })
 
 function ContactForm() {
+    const [isFetching, setIsFetching] = useState<boolean>(false);
     const t = useTranslations("Contact");
     const form = useForm<z.infer<typeof formSchema>>({
         resolver: zodResolver(formSchema),
@@ -32,6 +35,7 @@ function ContactForm() {
         }
     });
     async function onSubmit(values:z.infer<typeof formSchema>){
+        setIsFetching(true);
         try {
       const response = await fetch('/api/contact', {
         method: 'POST',
@@ -52,11 +56,14 @@ function ContactForm() {
       const result = await response.json();
 
       if (!response.ok) {
+        toast.error(t("error"));
+        setIsFetching(false);
         throw new Error(result.error || "Erreur serveur");
       }
 
       toast.success(t("success"));
       form.reset();
+      setIsFetching(false);
 
     } catch (error: unknown) {
         if(error instanceof Error){
@@ -127,7 +134,7 @@ function ContactForm() {
                     )} />
                 </OnViewAnimation>
                 <OnViewAnimation animation="popIn" duration={1} delay={0.6} className="col-span-1 sm:col-span-2">
-                    <Button type="submit" size={"lg"} variant={"light"} className='w-full'>{t("contact_send")}</Button>
+                    <Button type="submit" size={"lg"} variant={"light"} className='w-full' disabled={isFetching}>{t("contact_send")}<Loader className={cn("animate-spin", isFetching ? "inline-block" : "hidden")}/></Button>
                 </OnViewAnimation>
             </form>
         </Form>
