@@ -87,7 +87,20 @@
 },
 "Projects":{
   "header_title": "Des projets qui allient design",
-  "header_main": "performance et durabilité"
+  "header_main": "performance et durabilité",
+  "summary": "Résumé",
+  "services": "Prestations",
+  "team": "Équipe",
+  "date": "Date",
+  "no-tag": "Non renseigné",
+  "no-resume": "La description de ce projet n'est pas disponible pour l'instant.",
+  "saga_title": "Saga Africa",
+  "saga_desc": "Rénovation complète intérieure et extérieure, design modernisé à l’esprit africain.",
+  "carino_title": "Le Carino",
+  "carino_desc": "Immeuble mixte de 10 niveaux (glacier, spa, gym, bureaux, appartements).",
+  "tag_0": "Construction",
+  "tag_1": "Conception",
+  "tag_2": "Design d'intérieur"
 },
   "Contact":{
   "contact_title": "Parlez-nous",
@@ -119,5 +132,8 @@
     "terms_description": "",
     "privacy_title": "",
     "privacy_description": ""
+  },
+  "404":{
+    "title": "Projet Introuvable"
   }
 }

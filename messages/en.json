@@ -87,7 +87,20 @@
 },
   "Projects":{
   "header_title": "Des projets qui allient design",
-  "header_main": "performance, and sustainability"
+  "header_main": "performance, and sustainability",
+  "summary": "Summary",
+  "services": "Services",
+  "team": "Team",
+  "date": "Date",
+  "no-tag": "Not specified",
+  "no-resume": "This project description is unavailable for the moment.",
+  "saga_title": "Saga Africa",
+  "saga_desc": "Complete interior and exterior renovation, modernized design with an African spirit.",
+  "carino_title": "Le Carino",
+  "carino_desc": "10-story mixed-use building (ice cream shop, spa, gym, offices, apartments).",
+  "tag_0": "Construction",
+  "tag_1": "Conception",
+  "tag_2": "Interior Design"
 },
   "Contact":{
   "contact_title": "Tell us",
@@ -119,5 +132,8 @@
     "terms_description": "",
     "privacy_title": "",
     "privacy_description": ""
+  },
+  "404":{
+    "title": "Project Not Found"
   }
 }

@@ -19,6 +19,17 @@ export type ProjectPreview = {
   year: string;
 }
 
+export type Project = {
+  slug:string;
+  title:string;
+  description:string;
+  resume?: string;
+  images: Array<{src:string; alt:string}>
+  tags: Array<string>;
+  team: Array<string>;
+  date: Date;
+}
+
 export type HeroProps = {
   title: string;
   main_title: string;

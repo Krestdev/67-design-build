@@ -1,25 +1,29 @@
-import { ProjectPreview } from '@/types/types'
-import Link from 'next/link';
-import React from 'react'
-import { Button } from './ui/button';
-import { ArrowUpRight } from 'lucide-react';
+'use client'
 import { cn } from '@/lib/utils';
+import { Project } from '@/types/types';
+import { ArrowUpRight } from 'lucide-react';
+import Link from 'next/link';
 import OnViewAnimation from './onViewAnimation';
+import { Button } from './ui/button';
+import { useFormatter } from 'use-intl';
+import { useTranslations } from 'next-intl';
 
-interface Props extends ProjectPreview {
+interface Props extends Project {
     RTL?: boolean;
     style?: "default" | "condensed"
 }
 
-function ProjectCard({RTL=false, title, description, slug, images, style="default", year}:Props) {
+function ProjectCard({RTL=false, title, description, slug, images, style="default", date}:Props) {
+    const format = useFormatter();
     const [first, second, third] = images;
+    const t = useTranslations();
     if(style === "default"){
         return (
           <div className="flex flex-col gap-5 sm:gap-8">
-            <Link href={`/projects#${slug}`} className={cn("flex justify-between gap-3 flex-wrap")}>
+            <Link href={`/projects/${slug}`} className={cn("flex justify-between gap-3 flex-wrap")}>
                 <OnViewAnimation animation="slideLeft" className="grid gap-1">
-                    <h4 className="text-white">{title}</h4>
-                    <p className="text-gray-300">{description}</p>
+                    <h4 className="text-white">{t(title)}</h4>
+                    <p className="text-gray-300">{t(description)}</p>
                 </OnViewAnimation>
                 <Button variant={"ghost"} size={"icon"} className="text-gray-200 hover:text-neutral-900">
                     <ArrowUpRight/>
@@ -40,10 +44,10 @@ function ProjectCard({RTL=false, title, description, slug, images, style="defaul
         )
     }
     return (
-        <Link href={`/projects#${slug}`} className="aspect-video w-full h-auto max-w-[960px] relative rounded-[20px] overflow-hidden flex items-end justify-center gap-4">
+        <Link href={`/projects/${slug}`} className="aspect-video w-full h-auto max-w-[960px] relative rounded-[20px] overflow-hidden flex items-end justify-center gap-4">
             <div className="z-10 max-w-[636px] flex flex-col gap-1 py-4 text-center">
-                <h4>{title}</h4>
-                <p className="text-neutral-600 leading-[150%]">{year}</p>
+                <h4>{t(title)}</h4>
+                <p className="text-neutral-600 leading-[150%]">{format.dateTime(date, { month: "long", year: "numeric" })}</p>
             </div>
             <img src={first.src} alt={first.alt} className="absolute top-0 left-0 w-full h-full object-cover" />
             <div className="absolute top-0 left-0 w-full h-full bg-linear-to-t from-white via-white/40 to-white-0" />

@@ -5,7 +5,8 @@ import Partners from '@/components/sections/partners';
 import Services from '@/components/sections/services';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import { Button } from '@/components/ui/button';
-import { Expertise, ProjectPreview } from '@/types/types';
+import { works } from '@/data/data';
+import { Expertise } from '@/types/types';
 import { ChevronRight } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 import Link from 'next/link';
@@ -29,22 +30,6 @@ function Page() {
         desc: t("area_pro_desc")
       },
     ];
-    const top_projects: Array<ProjectPreview> = [
-      {
-        slug: "saga-africa",
-        title: t("project_saga_title"),
-        description: t("project_saga_desc"),
-        images: [{src:"/images/saga_room.webp", alt:"saga-africa"},{src:"/images/saga_home.webp", alt:"saga interior"},{src:"/images/saga_exterior.webp", alt:"saga external"}],
-        year: "2025"
-      },
-      {
-        slug: "le-carino",
-        title: t("project_carino_title"),
-        description: t("project_carino_desc"),
-        images: [{src:"/images/carino_3d_2.webp", alt:"3d le carino"},{src:"/images/carino_3d_1.webp", alt:"le carino"},{src:"/images/carino_3d.webp", alt:"3d du carino"},],
-        year: "2025"
-      },
-    ]; 
   return (
     <main>
       <section className='relative overflow-hidden w-full sm:min-h-[90vh] px-5 py-36 flex flex-col gap-3 sm:gap-5 items-center text-center'>
@@ -113,7 +98,7 @@ function Page() {
               <p className="text-start sm:text-center max-w-[744px]">{t("project_desc")}</p>
             </OnViewAnimation>
           </div>
-          {top_projects.map((project, id)=>(
+          {works.map((project, id)=>(
             <ProjectCard key={id} RTL={id%2!==0} style="default" {...project}/>
           ))}
         </div>
