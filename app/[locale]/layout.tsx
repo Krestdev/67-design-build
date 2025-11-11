@@ -37,6 +37,29 @@ export async function generateMetadata(params: Promise<{locale: string}>):Promis
     template: "%s - 67 Design & Build"
   },
   description: t("home_description"),
+  keywords: ["construction", "67", "67 Design & Build", "Design"],
+  authors: [{name:"KrestDev", url: "https://krestdev.com/"}],
+  publisher: "KrestDev",
+  icons: {
+    icon: "/favicon.ico"
+  },
+  openGraph: {
+    title: {
+    default: t("home_title"),
+    template: "%s - 67 Design & Build"
+  },
+  description: t("home_description"),
+  url: process.env.NEXT_PUBLIC_URL ?? "https://67designandbuild.krestdev.com",
+  siteName: "67 Design & Build",
+  images: [
+    {
+      url:"/og.jpg",
+      width:1200,
+      height: 630,
+      alt: "logo"
+    }
+  ]
+  }
 }
 }
 
