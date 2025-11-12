@@ -7,6 +7,7 @@ import { getTranslations } from "next-intl/server";
 import { Exo, Instrument_Serif } from "next/font/google";
 import { notFound } from "next/navigation";
 import "../globals.css";
+import { Toaster } from "@/components/ui/sonner";
 
 const exo_sans = Exo({
   variable: "--font-exo",
@@ -82,6 +83,7 @@ export default async function LocaleLayout({children, params}: Props) {
         <NextIntlClientProvider>
           <Navbar/>
           {children}
+          <Toaster/>
           <Footbar/>
         </NextIntlClientProvider>
       </body>
