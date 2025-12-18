@@ -11,8 +11,8 @@ function Footbar() {
             <div className='flex items-center flex-col sm:flex-row gap-3'>
                 <p className="text-white font-medium">{"© 67 Design & Build, 2025"}</p>
                 <div className="flex flex-col sm:flex-row">
-                    <Link href={"#"} className="bg-transparent hover:bg-neutral-800 rounded-md flex items-center h-9 gap-2 px-4 font-medium text-neutral-600 hover:text-neutral-300 transition-all duration-300 ease-out" target="_blank">{t("terms")}</Link>
-                    <Link href={"#"} className="bg-transparent hover:bg-neutral-800 rounded-md flex items-center h-9 gap-2 px-4 font-medium text-neutral-600 hover:text-neutral-300 transition-all duration-300 ease-out" target="_blank">{t("privacy")}</Link>
+                    <Link href={"/terms"} className="bg-transparent hover:bg-neutral-800 rounded-md flex items-center h-9 gap-2 px-4 font-medium text-neutral-600 hover:text-neutral-300 transition-all duration-300 ease-out">{t("terms")}</Link>
+                    <Link href={"/privacy"} className="bg-transparent hover:bg-neutral-800 rounded-md flex items-center h-9 gap-2 px-4 font-medium text-neutral-600 hover:text-neutral-300 transition-all duration-300 ease-out">{t("privacy")}</Link>
                 </div>
             </div>
             <div className="flex gap-2">
